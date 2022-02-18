@@ -27,7 +27,7 @@ pipeline {
 
         stage('Deploy'){
            steps {
-               bat "\"${tool 'MSBuild'}\" WEBMVC.sln /p:DeployOnBuild=true /p:DeployDefaultTarget=WebPublish /p:WebPublishMethod=FileSystem /p:SkipInvalidConfigurations=true /t:build /p:Configuration=Release /p:Platform=\"Any CPU\" /p:DeleteExistingFiles=True /p:publishUrl=C:\Users\lamhtpham\Desktop\Kiến thức\WebMVC"
+               bat "\"${tool 'MSBuild'}\" WEBMVC.sln /p:DeployOnBuild=true /p:DeployDefaultTarget=WebPublish /p:WebPublishMethod=FileSystem /p:SkipInvalidConfigurations=true /t:build /p:Configuration=Release /p:Platform=\"Any CPU\" /p:DeleteExistingFiles=True /p:publishUrl=C:\\Users\\lamhtpham\\Desktop\\Kiến thức\\WebMVC"
            }
         }
 
